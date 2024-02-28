@@ -1,0 +1,29 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: "The enum constructor is called separately for each enum constant, at the\
+    \ time they are declared."
+  - text: The `offset` field can be modified directly using something like `TimeZone.EST.offset
+      = -4;`
+  - text: "The constructor `TimeZone(String desc, int offset)` can be invoked directly\
+    \ to create a new instance of `TimeZone`."
+  - text: '`TimeZone.PST.getDesc()` will return the description of the timezone PST
+    as `&quot;Pacific Standard Time&quot;`.'
+  - text: '`TimeZone.CST` is an instance of an enum type `TimeZone` and it will have
+    only one instance throughout JVM.'
+files:
+  - name: src/Task.java
+    visible: true
+    text: |
+      // You can experiment here, it won’t be checked
+      
+      public class Task {
+        public static void main(String[] args) {
+          // put your code here
+        }
+      }
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/30676#comment
+status: Solved
+record: -1
+local_check: false
