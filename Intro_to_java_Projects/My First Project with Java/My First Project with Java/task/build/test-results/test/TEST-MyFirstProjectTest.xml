@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="MyFirstProjectTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-11-02T01:09:22" hostname="YoTis-MacBook.local" time="0.243">
+  <properties/>
+  <testcase name="start" classname="MyFirstProjectTest" time="0.243"/>
+  <system-out><![CDATA[?[1;31m
+Start test 1?[0m
+Earned amount: 
+Bubblegum: $202
+Toffee: $118
+Ice cream: $2250
+Milk chocolate: $1680
+Doughnut: $1075
+Pancake: $80
+
+Income: $5405
+Staff expenses: 
+> 4170
+Other expenses: 
+> 220
+Net income: $1015
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
