@@ -1,0 +1,1506 @@
+[1;31m
+Start test 1[0m
+Enter the number of rows:
+> 7
+'Enter the number of seats in each row:
+> 8
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 0
+[1;31m
+Start test 2[0m
+Enter the number of rows:
+> 7
+'Enter the number of seats in each row:
+> 8
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 1
+Cinema:
+  1 2 3 4 5 6 7 8 
+1 S S S S S S S S 
+2 S S S S S S S S 
+3 S S S S S S S S 
+4 S S S S S S S S 
+5 S S S S S S S S 
+6 S S S S S S S S 
+7 S S S S S S S S 
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+Enter the number of rows:
+> 2
+'Enter the number of seats in each row:
+> 2
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 1
+Cinema:
+  1 2 
+1 S S 
+2 S S 
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+Enter the number of rows:
+> 9
+'Enter the number of seats in each row:
+> 9
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 1
+Cinema:
+  1 2 3 4 5 6 7 8 9 
+1 S S S S S S S S S 
+2 S S S S S S S S S 
+3 S S S S S S S S S 
+4 S S S S S S S S S 
+5 S S S S S S S S S 
+6 S S S S S S S S S 
+7 S S S S S S S S S 
+8 S S S S S S S S S 
+9 S S S S S S S S S 
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 0
+[1;31m
+Start test 3[0m
+Enter the number of rows:
+> 7
+'Enter the number of seats in each row:
+> 8
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 2
+!Enter a seat number in that row:
+> 4
+Ticket price: $10
+Ticket purchased for seat 2-4.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 1
+Cinema:
+  1 2 3 4 5 6 7 8 
+1 S S S S S S S S 
+2 S S S B S S S S 
+3 S S S S S S S S 
+4 S S S S S S S S 
+5 S S S S S S S S 
+6 S S S S S S S S 
+7 S S S S S S S S 
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 3
+!Enter a seat number in that row:
+> 5
+Ticket price: $10
+Ticket purchased for seat 3-5.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 1
+Cinema:
+  1 2 3 4 5 6 7 8 
+1 S S S S S S S S 
+2 S S S B S S S S 
+3 S S S S B S S S 
+4 S S S S S S S S 
+5 S S S S S S S S 
+6 S S S S S S S S 
+7 S S S S S S S S 
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+[1;31m
+Start test 4[0m
+Enter the number of rows:
+> 9
+'Enter the number of seats in each row:
+> 9
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 1
+!Enter a seat number in that row:
+> 1
+Ticket price: $10
+Ticket purchased for seat 1-1.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 4
+!Enter a seat number in that row:
+> 5
+Ticket price: $10
+Ticket purchased for seat 4-5.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 1
+Cinema:
+  1 2 3 4 5 6 7 8 9 
+1 B S S S S S S S S 
+2 S S S S S S S S S 
+3 S S S S S S S S S 
+4 S S S S B S S S S 
+5 S S S S S S S S S 
+6 S S S S S S S S S 
+7 S S S S S S S S S 
+8 S S S S S S S S S 
+9 S S S S S S S S S 
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 5
+!Enter a seat number in that row:
+> 5
+Ticket price: $8
+Ticket purchased for seat 5-5.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 1
+Cinema:
+  1 2 3 4 5 6 7 8 9 
+1 B S S S S S S S S 
+2 S S S S S S S S S 
+3 S S S S S S S S S 
+4 S S S S B S S S S 
+5 S S S S B S S S S 
+6 S S S S S S S S S 
+7 S S S S S S S S S 
+8 S S S S S S S S S 
+9 S S S S S S S S S 
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 6
+!Enter a seat number in that row:
+> 6
+Ticket price: $8
+Ticket purchased for seat 6-6.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 1
+Cinema:
+  1 2 3 4 5 6 7 8 9 
+1 B S S S S S S S S 
+2 S S S S S S S S S 
+3 S S S S S S S S S 
+4 S S S S B S S S S 
+5 S S S S B S S S S 
+6 S S S S S B S S S 
+7 S S S S S S S S S 
+8 S S S S S S S S S 
+9 S S S S S S S S S 
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+[1;31m
+Start test 5[0m
+Enter the number of rows:
+> 9
+'Enter the number of seats in each row:
+> 9
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 1
+!Enter a seat number in that row:
+> 1
+Ticket price: $10
+Ticket purchased for seat 1-1.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 1
+!Enter a seat number in that row:
+> 1
+DThat ticket has already been purchased! Please select another seat.
+Enter a row number:
+> 9
+!Enter a seat number in that row:
+> 5
+Ticket price: $8
+Ticket purchased for seat 9-5.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 9
+!Enter a seat number in that row:
+> 5
+DThat ticket has already been purchased! Please select another seat.
+Enter a row number:
+> 2
+!Enter a seat number in that row:
+> 3
+Ticket price: $10
+Ticket purchased for seat 2-3.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 10
+!Enter a seat number in that row:
+> 1
+2Wrong input! Please enter valid seat coordinates.
+Enter a row number:
+> 5
+!Enter a seat number in that row:
+> 10
+2Wrong input! Please enter valid seat coordinates.
+Enter a row number:
+> -5
+!Enter a seat number in that row:
+> 12
+2Wrong input! Please enter valid seat coordinates.
+Enter a row number:
+> 5
+!Enter a seat number in that row:
+> 5
+Ticket price: $8
+Ticket purchased for seat 5-5.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+[1;31m
+Start test 6[0m
+Enter the number of rows:
+> 9
+'Enter the number of seats in each row:
+> 9
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 3
+Number of purchased tickets: 0
+Percentage: 0.00%
+Current income: $0
+Total income: $720
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 1
+!Enter a seat number in that row:
+> 7
+Ticket price: $10
+Ticket purchased for seat 1-7.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 1
+!Enter a seat number in that row:
+> 8
+Ticket price: $10
+Ticket purchased for seat 1-8.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 1
+!Enter a seat number in that row:
+> 9
+Ticket price: $10
+Ticket purchased for seat 1-9.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 3
+Number of purchased tickets: 3
+Percentage: 3.70%
+Current income: $30
+Total income: $720
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 9
+!Enter a seat number in that row:
+> 1
+Ticket price: $8
+Ticket purchased for seat 9-1.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 9
+!Enter a seat number in that row:
+> 2
+Ticket price: $8
+Ticket purchased for seat 9-2.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 9
+!Enter a seat number in that row:
+> 3
+Ticket price: $8
+Ticket purchased for seat 9-3.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 3
+Number of purchased tickets: 6
+Percentage: 7.41%
+Current income: $54
+Total income: $720
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 2
+!Enter a seat number in that row:
+> 1
+Ticket price: $10
+Ticket purchased for seat 2-1.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 2
+!Enter a seat number in that row:
+> 2
+Ticket price: $10
+Ticket purchased for seat 2-2.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 2
+!Enter a seat number in that row:
+> 3
+Ticket price: $10
+Ticket purchased for seat 2-3.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 2
+!Enter a seat number in that row:
+> 4
+Ticket price: $10
+Ticket purchased for seat 2-4.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 2
+!Enter a seat number in that row:
+> 5
+Ticket price: $10
+Ticket purchased for seat 2-5.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 2
+!Enter a seat number in that row:
+> 6
+Ticket price: $10
+Ticket purchased for seat 2-6.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 2
+!Enter a seat number in that row:
+> 7
+Ticket price: $10
+Ticket purchased for seat 2-7.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 2
+!Enter a seat number in that row:
+> 8
+Ticket price: $10
+Ticket purchased for seat 2-8.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 2
+!Enter a seat number in that row:
+> 9
+Ticket price: $10
+Ticket purchased for seat 2-9.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 3
+!Enter a seat number in that row:
+> 1
+Ticket price: $10
+Ticket purchased for seat 3-1.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 3
+!Enter a seat number in that row:
+> 2
+Ticket price: $10
+Ticket purchased for seat 3-2.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 3
+!Enter a seat number in that row:
+> 3
+Ticket price: $10
+Ticket purchased for seat 3-3.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 3
+!Enter a seat number in that row:
+> 4
+Ticket price: $10
+Ticket purchased for seat 3-4.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 3
+!Enter a seat number in that row:
+> 5
+Ticket price: $10
+Ticket purchased for seat 3-5.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 3
+!Enter a seat number in that row:
+> 6
+Ticket price: $10
+Ticket purchased for seat 3-6.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 3
+!Enter a seat number in that row:
+> 7
+Ticket price: $10
+Ticket purchased for seat 3-7.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 3
+!Enter a seat number in that row:
+> 8
+Ticket price: $10
+Ticket purchased for seat 3-8.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 3
+!Enter a seat number in that row:
+> 9
+Ticket price: $10
+Ticket purchased for seat 3-9.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 4
+!Enter a seat number in that row:
+> 1
+Ticket price: $10
+Ticket purchased for seat 4-1.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 4
+!Enter a seat number in that row:
+> 2
+Ticket price: $10
+Ticket purchased for seat 4-2.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 4
+!Enter a seat number in that row:
+> 3
+Ticket price: $10
+Ticket purchased for seat 4-3.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 4
+!Enter a seat number in that row:
+> 4
+Ticket price: $10
+Ticket purchased for seat 4-4.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 4
+!Enter a seat number in that row:
+> 5
+Ticket price: $10
+Ticket purchased for seat 4-5.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 4
+!Enter a seat number in that row:
+> 6
+Ticket price: $10
+Ticket purchased for seat 4-6.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 4
+!Enter a seat number in that row:
+> 7
+Ticket price: $10
+Ticket purchased for seat 4-7.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 4
+!Enter a seat number in that row:
+> 8
+Ticket price: $10
+Ticket purchased for seat 4-8.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 4
+!Enter a seat number in that row:
+> 9
+Ticket price: $10
+Ticket purchased for seat 4-9.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 5
+!Enter a seat number in that row:
+> 1
+Ticket price: $8
+Ticket purchased for seat 5-1.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 5
+!Enter a seat number in that row:
+> 2
+Ticket price: $8
+Ticket purchased for seat 5-2.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 5
+!Enter a seat number in that row:
+> 3
+Ticket price: $8
+Ticket purchased for seat 5-3.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 5
+!Enter a seat number in that row:
+> 4
+Ticket price: $8
+Ticket purchased for seat 5-4.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 5
+!Enter a seat number in that row:
+> 5
+Ticket price: $8
+Ticket purchased for seat 5-5.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 5
+!Enter a seat number in that row:
+> 6
+Ticket price: $8
+Ticket purchased for seat 5-6.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 5
+!Enter a seat number in that row:
+> 7
+Ticket price: $8
+Ticket purchased for seat 5-7.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 5
+!Enter a seat number in that row:
+> 8
+Ticket price: $8
+Ticket purchased for seat 5-8.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 5
+!Enter a seat number in that row:
+> 9
+Ticket price: $8
+Ticket purchased for seat 5-9.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 6
+!Enter a seat number in that row:
+> 1
+Ticket price: $8
+Ticket purchased for seat 6-1.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 6
+!Enter a seat number in that row:
+> 2
+Ticket price: $8
+Ticket purchased for seat 6-2.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 6
+!Enter a seat number in that row:
+> 3
+Ticket price: $8
+Ticket purchased for seat 6-3.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 6
+!Enter a seat number in that row:
+> 4
+Ticket price: $8
+Ticket purchased for seat 6-4.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 6
+!Enter a seat number in that row:
+> 5
+Ticket price: $8
+Ticket purchased for seat 6-5.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 6
+!Enter a seat number in that row:
+> 6
+Ticket price: $8
+Ticket purchased for seat 6-6.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 6
+!Enter a seat number in that row:
+> 7
+Ticket price: $8
+Ticket purchased for seat 6-7.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 6
+!Enter a seat number in that row:
+> 8
+Ticket price: $8
+Ticket purchased for seat 6-8.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 6
+!Enter a seat number in that row:
+> 9
+Ticket price: $8
+Ticket purchased for seat 6-9.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 7
+!Enter a seat number in that row:
+> 1
+Ticket price: $8
+Ticket purchased for seat 7-1.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 7
+!Enter a seat number in that row:
+> 2
+Ticket price: $8
+Ticket purchased for seat 7-2.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 7
+!Enter a seat number in that row:
+> 3
+Ticket price: $8
+Ticket purchased for seat 7-3.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 7
+!Enter a seat number in that row:
+> 4
+Ticket price: $8
+Ticket purchased for seat 7-4.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 7
+!Enter a seat number in that row:
+> 5
+Ticket price: $8
+Ticket purchased for seat 7-5.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 7
+!Enter a seat number in that row:
+> 6
+Ticket price: $8
+Ticket purchased for seat 7-6.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 7
+!Enter a seat number in that row:
+> 7
+Ticket price: $8
+Ticket purchased for seat 7-7.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 7
+!Enter a seat number in that row:
+> 8
+Ticket price: $8
+Ticket purchased for seat 7-8.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 7
+!Enter a seat number in that row:
+> 9
+Ticket price: $8
+Ticket purchased for seat 7-9.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 8
+!Enter a seat number in that row:
+> 1
+Ticket price: $8
+Ticket purchased for seat 8-1.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 8
+!Enter a seat number in that row:
+> 2
+Ticket price: $8
+Ticket purchased for seat 8-2.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 8
+!Enter a seat number in that row:
+> 3
+Ticket price: $8
+Ticket purchased for seat 8-3.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 8
+!Enter a seat number in that row:
+> 4
+Ticket price: $8
+Ticket purchased for seat 8-4.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 8
+!Enter a seat number in that row:
+> 5
+Ticket price: $8
+Ticket purchased for seat 8-5.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 8
+!Enter a seat number in that row:
+> 6
+Ticket price: $8
+Ticket purchased for seat 8-6.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 8
+!Enter a seat number in that row:
+> 7
+Ticket price: $8
+Ticket purchased for seat 8-7.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 8
+!Enter a seat number in that row:
+> 8
+Ticket price: $8
+Ticket purchased for seat 8-8.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 8
+!Enter a seat number in that row:
+> 9
+Ticket price: $8
+Ticket purchased for seat 8-9.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 3
+ Number of purchased tickets: 69
+Percentage: 85.19%
+Current income: $612
+Total income: $720
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 1
+!Enter a seat number in that row:
+> 1
+Ticket price: $10
+Ticket purchased for seat 1-1.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 1
+!Enter a seat number in that row:
+> 2
+Ticket price: $10
+Ticket purchased for seat 1-2.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 1
+!Enter a seat number in that row:
+> 3
+Ticket price: $10
+Ticket purchased for seat 1-3.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 1
+!Enter a seat number in that row:
+> 4
+Ticket price: $10
+Ticket purchased for seat 1-4.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 1
+!Enter a seat number in that row:
+> 5
+Ticket price: $10
+Ticket purchased for seat 1-5.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 1
+!Enter a seat number in that row:
+> 6
+Ticket price: $10
+Ticket purchased for seat 1-6.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 1
+Cinema:
+  1 2 3 4 5 6 7 8 9 
+1 B B B B B B B B B 
+2 B B B B B B B B B 
+3 B B B B B B B B B 
+4 B B B B B B B B B 
+5 B B B B B B B B B 
+6 B B B B B B B B B 
+7 B B B B B B B B B 
+8 B B B B B B B B B 
+9 B B B S S S S S S 
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 9
+!Enter a seat number in that row:
+> 4
+Ticket price: $8
+Ticket purchased for seat 9-4.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 9
+!Enter a seat number in that row:
+> 5
+Ticket price: $8
+Ticket purchased for seat 9-5.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 9
+!Enter a seat number in that row:
+> 6
+Ticket price: $8
+Ticket purchased for seat 9-6.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 9
+!Enter a seat number in that row:
+> 7
+Ticket price: $8
+Ticket purchased for seat 9-7.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 9
+!Enter a seat number in that row:
+> 8
+Ticket price: $8
+Ticket purchased for seat 9-8.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 2
+Enter a row number:
+> 9
+!Enter a seat number in that row:
+> 9
+Ticket price: $8
+Ticket purchased for seat 9-9.
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
+> 3
+ Number of purchased tickets: 81
+Percentage: 100.00%
+Current income: $720
+Total income: $720
+
+1. Show the seats
+2. Buy a ticket
+3. Statistics
+0. Exit
+Choose an option:
