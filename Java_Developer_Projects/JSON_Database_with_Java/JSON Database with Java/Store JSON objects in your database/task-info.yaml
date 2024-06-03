@@ -1,0 +1,39 @@
+type: edu
+files:
+  - name: src/client/Main.java
+    visible: true
+    learner_created: false
+  - name: src/server/Main.java
+    visible: true
+    learner_created: false
+  - name: test/JsonDatabaseTest.java
+    visible: false
+    learner_created: false
+  - name: test/JsonFinder.java
+    visible: false
+    learner_created: false
+  - name: test/JsonRequestBuilder.java
+    visible: false
+    learner_created: false
+  - name: src/client/data/testGet.json
+    visible: true
+    learner_created: true
+  - name: server/data/db.json
+    visible: true
+    learner_created: true
+  - name: src/client/data/testSet.json
+    visible: true
+    learner_created: true
+  - name: src/client/data/testDelete.json
+    visible: true
+    learner_created: true
+  - name: src/server/data/data.json
+    visible: true
+    learner_created: true
+feedback_link: https://hyperskill.org/learn/step/5495#comment
+status: Solved
+feedback:
+  message: Well done! You've finished the project. Select a new project on <a href="https://hyperskill.org/projects">Hyperskill</a>
+    to continue learning.
+  time: "Mon, 03 Jun 2024 16:08:05 UTC"
+record: 6
