@@ -1,0 +1,20 @@
+type: edu
+files:
+  - name: src/four/ApplicationRunner.java
+    visible: true
+    learner_created: false
+  - name: src/four/ConnectFour.java
+    visible: true
+    learner_created: false
+  - name: test/Connect4Test.java
+    visible: false
+    learner_created: false
+  - name: src/four/Board.java
+    visible: true
+    learner_created: true
+feedback_link: https://hyperskill.org/learn/step/17269#comment
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Wed, 05 Jun 2024 11:43:04 UTC"
+record: 3
