@@ -1,0 +1,23 @@
+type: edu
+files:
+  - name: src/tracker/Main.java
+    visible: true
+    learner_created: false
+  - name: test/tracker/SampleTest.java
+    visible: true
+    learner_created: false
+  - name: build.gradle
+    visible: true
+    learner_created: false
+  - name: test/LearningProgressTrackerTest.java
+    visible: false
+    learner_created: false
+  - name: src/tracker/Student.java
+    visible: true
+    learner_created: true
+feedback_link: https://hyperskill.org/projects/197/stages/981/implement#comment
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sat, 06 Jul 2024 13:28:48 UTC"
+record: 3

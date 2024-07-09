@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="JsonDatabaseTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-06-03T16:08:04" hostname="YoTis-MacBook.local" time="0.943">
+<testsuite name="JsonDatabaseTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-06-05T16:50:24" hostname="YoTis-MacBook.local" time="0.944">
   <properties/>
-  <testcase name="start" classname="JsonDatabaseTest" time="0.943"/>
+  <testcase name="start" classname="JsonDatabaseTest" time="0.944"/>
   <system-out><![CDATA[?[1;31m
 Start test 1?[0m
 Server started!
