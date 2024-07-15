@@ -1,0 +1,23 @@
+type: edu
+files:
+  - name: src/blockchain/Main.java
+    visible: true
+    learner_created: false
+  - name: test/BlockchainTest.java
+    visible: false
+    learner_created: false
+  - name: src/blockchain/Block.java
+    visible: true
+    learner_created: true
+  - name: src/blockchain/Blockchain.java
+    visible: true
+    learner_created: true
+  - name: src/blockchain/StringUtil.java
+    visible: true
+    learner_created: true
+feedback_link: https://hyperskill.org/learn/step/5413#comment
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Tue, 09 Jul 2024 12:58:16 UTC"
+record: 1

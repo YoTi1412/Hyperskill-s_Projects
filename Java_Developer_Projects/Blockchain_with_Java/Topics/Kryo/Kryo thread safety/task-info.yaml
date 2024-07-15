@@ -1,0 +1,15 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: Kryo is completely thread-safe
+  - text: Kryo is thread-safe but with certain restrictions
+  - text: Kryo is not thread-safe but can be made thread-safe with external synchronization
+  - text: Kryo is not thread-safe and cannot be made thread-safe
+files:
+  - name: src/Task.java
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/27765#comment
+status: Solved
+record: -1
+local_check: false

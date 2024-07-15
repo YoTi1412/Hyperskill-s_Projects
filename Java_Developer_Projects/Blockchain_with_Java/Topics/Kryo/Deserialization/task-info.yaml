@@ -1,0 +1,15 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: input.readObject(Wizard.class);
+  - text: "kryo.readObject(input, Wizard.class);"
+  - text: new Input(new FileInputStream("data.bin"));
+  - text: "kryo.read(input, Wizard.class);"
+files:
+  - name: src/Task.java
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/32173#comment
+status: Solved
+record: -1
+local_check: false

@@ -1,0 +1,199 @@
+<div class="step-text">
+<p><strong>Kryo</strong> is a fast and efficient binary object graph serialization framework for Java. It is designed to be simple to use and highly configurable, with a small memory footprint. The Kryo framework can serialize and deserialize objects from the standard Java library, including collections and enums, as well as objects not part of the standard library but registered with the framework.</p>
+<h5 id="introduction-to-kryo">Introduction to Kryo</h5>
+<p>Kryo is often used in applications where performance and memory usage are critical, such as in video games, data processing pipelines, or distributed systems. Such performance and efficiency can be achieved due to the fact that Kryo serializes data in binary format and has internal optimizations, including object caching and field registration. Kryo caches objects that have already been serialized to reduce the time needed to serialize them again. Kryo requires the fields to be registered before they are serialized, which allows for efficient serialization and deserialization.</p>
+<p>Unlike JSON or XML, the binary format is not human-readable. So, in addition to the obvious advantages, this is also a disadvantage of Kryo: this can make it more challenging to debug serialized data or inspect the contents of a serialized file manually. </p>
+<p>Another downside is that Kryo is not thread-safe, because it uses internal data structures and caches that are not protected against <a class="theory-lookup not-relevant" href="/learn/step/27755" rel="noopener noreferrer nofollow" target="_blank" title="In Java, concurrent access refers to the ability for multiple threads to access and potentially modify shared data or resources concurrently. | This can lead to issues such as data inconsistency and thread interference if not properly managed. To handle concurrent access, there are two main approaches: optimistic and pessimistic locking. Optimistic locking allows multiple threads to access the shared resource without blocking, but it can result in conflicts and retries, potentially slowing down the system. Pessimistic locking, on the other hand, uses a lock or monitor to ensure that only one thread can access the critical section of code that modifies the shared resource at a time. Concurrent collections, such as a concurrent queue, are often used to organize communication between threads and ensure thread-safety. Classic collections like ArrayList, HashSet, and LinkedList are non-synchronized and do not provide thread-safety, while older collections like Vector, Hashtable, and Vector are synchronized but have lower performance.">concurrent access</a>. For example, Kryo uses a cache to store information about previously serialized classes, and this cache is not thread-safe. If multiple threads attempt to access the cache at the same time, they may overwrite each other's changes or cause other unexpected behavior. Since Kryo is not thread-safe, it is important to use proper synchronization when sharing instances of Kryo among multiple threads or to use a thread-local instance of Kryo or a pool of reusable instances.</p>
+<p>Furthermore, creating a new instance of Kryo can be relatively expensive, as it requires allocating memory and initializing various internal data structures, such as a cache for storing information about previously serialized classes, which is populated by scanning the class path and analyzing the fields and properties of available classes. These internal <a class="theory-lookup not-relevant" href="/learn/step/27755" rel="noopener noreferrer nofollow" target="_blank" title="In Java, a data structure is a collection of elements that are grouped together in a specific way to allow for efficient storage, retrieval, and manipulation of data. | They are represented by different classes from the Java Standard Library and can be generic or non-generic. Data structures can be more sophisticated and flexible than arrays as they are resizable, allowing you to add any number of elements to a collection. Additionally, collections provide a rich set of methods that are already implemented for you, making it easier to perform common operations. Different types of collections have different internal storage structures, so you can choose a collection type that best matches your problem and optimizes your most frequent operations.">data structures</a> are only necessary during the serialization/deserialization process and are not needed once the process is completed.</p>
+<p>To avoid these issues, using a thread-local instance of Kryo or a pool of reusable Kryo instances that can be shared among multiple threads is advisable.</p>
+<h5 id="object-serialization-and-deserialization">Object serialization and deserialization</h5>
+<p>Let's look at an example of serialization and deserialization using Kryo. To start using Kryo in your application with Maven, use this dependency entry in your <code class="language-java">pom.xml</code>: </p>
+<pre><code class="language-java">&lt;dependency&gt;
+    &lt;groupId&gt;com.esotericsoftware&lt;/groupId&gt;
+    &lt;artifactId&gt;kryo&lt;/artifactId&gt;
+    &lt;version&gt;5.4.0&lt;/version&gt;
+&lt;/dependency&gt;
+</code></pre>
+<p>To use Kryo in an application with Gradle, use the following dependency entry:</p>
+<pre><code class="language-java">implementation group: 'com.esotericsoftware', name: 'kryo', version: '5.4.0'
+</code></pre>
+<p>Imagine we want to serialize and deserialize an object of a <code class="language-java">City</code> class:</p>
+<pre><code class="language-java">public class City {
+    String cityName;
+    Country country;
+
+    public City() {}
+
+    public City(String cityName, Country country) {
+        this.cityName = cityName;
+        this.country = country;
+    }
+
+    @Override
+    public String toString() {
+        return this.cityName + " is in " + this.country.countryName +
+                "(" + this.country.continentName + ")";
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        City city = (City) o;
+        return this.country.equals(city.country) &amp;&amp; this.cityName.equals(city.cityName);
+    }
+}</code></pre>
+<pre><code class="language-java">public class Country {
+    String countryName;
+    String continentName;
+
+    public Country() {}
+
+    public Country(String countryName, String continentName) {
+        this.countryName = countryName;
+        this.continentName = continentName;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Country country = (Country) o;
+        return this.countryName.equals(country.countryName)
+                &amp;&amp; this.continentName.equals(country.continentName);
+    }
+}</code></pre>
+<p>The following code shows how to serialize and deserialize an object with the help of Kryo:</p>
+<pre><code class="language-java">public class Main {
+    public static void main(String[] args) throws Exception {
+        // Create a new instance of Kryo
+        Kryo kryo = new Kryo();
+
+        // All classes that Kryo will read or write must be registered beforehand
+        kryo.register(City.class);
+        kryo.register(Country.class);
+
+        // Create a new instance of custom class
+        City city = new City("Berlin", new Country("Germany", "Eurasia"));
+
+        //try-with-resources
+        try (Output output = new Output(new FileOutputStream("data.bin"))) {
+            // Serialize the object to a file
+            kryo.writeObject(output, city);
+            // Object in array of byte
+            byte[] bytes = output.toBytes();
+            // Print the object byte array
+            System.out.println("Byte array: " + Arrays.toString(bytes));
+        } catch (IOException e) {
+            System.err.println("An error occurred while writing to the file: " + e.getMessage());
+        }
+        //try-with-resources
+        try (Input input = new Input(new FileInputStream("data.bin"))) {
+            // Deserialize the object from the file
+            City city2 = kryo.readObject(input, City.class);
+            // Show object after deserialization
+            System.out.println("Object after deserialization: " + city2);
+            // Show that serialized object is the same after deserialization
+            System.out.println("Are objects equal before and after serialization: "
+                    + city.equals(city2));
+        } catch (IOException e) {
+            System.err.println("An error occurred while reading from the file: " + e.getMessage());
+        }
+    }
+}</code></pre>
+<p>This is what is displayed in the console:</p>
+<pre><code class="language-java">Byte array: [66, 101, 114, 108, 105, -18, 12, 69, 117, 114, 97, 115, 105, -31, 71, 101, 114, 109, 97, 110, -7]
+Object after deserialization: Berlin is in Germany(Eurasia)
+Are objects equal before and after serialization: true</code></pre>
+<p>It's very important to close the <code class="language-java">Input</code> and <code class="language-java">Output</code> classes after their use. When an instance of <code class="language-java">Input</code> or <code class="language-java">Output</code> is created, it opens an underlying stream or allocates a buffer in memory. These resources need to be freed after use. Closing the <code class="language-java">Input</code> or <code class="language-java">Output</code> instance releases these resources and prevents memory leaks.</p>
+<p>The <strong>try-with-resources</strong> statement is a feature in Java that allows automatic resource management for Java objects that implement the <code class="language-java">java.lang.AutoCloseable</code> interface. It ensures that the resources are properly closed, even if an exception is thrown.</p>
+<h5 id="class-registration">Class registration</h5>
+<p>As you can see in the example above, we called the <code class="language-java">register(City.class)</code> and <code class="language-java">register(Country.class)</code> methods. Kryo uses <a class="theory-lookup not-relevant" href="/learn/step/27755" rel="noopener noreferrer nofollow" target="_blank" title="In Java, class registration is not a commonly used term and it seems to be a misunderstanding or a misinterpretation of the concept of classes and objects in Java. | Based on the provided context, it seems like the user is referring to the process of creating and using classes and objects in Java. In Java, a class is a blueprint or a template for creating objects. It is a way to define a new data type in Java. A class can contain fields (variables) and methods (functions) that operate on those fields. An object is an instance of a class. It is a block of memory that has been allocated and configured according to the specifications of a class. When creating a class, it is common to include variables, getter methods, a constructor, and sometimes overriding methods such as `toString()`, `equals()`, and `hashCode()`. A record is a new feature in Java 14 and above, which is a way to declare a new type in Java, similar to a class, but with less boilerplate code. It is important to note that classes and objects do not get registered in the traditional sense of the word.">class registration</a> to keep track of the classes that have been serialized and deserialized and to improve performance by reusing previously registered class information. Kryo uses the unique ID assigned to the class during registration to identify the class when reading the serialized data.</p>
+<p>If you try to serialize an object of a class that is not registered with Kryo, the serialization process will fail. Kryo will not be able to generate a unique ID for the class or store information about the class's fields and properties. When trying to serialize the object, the program will throw the <code class="language-java">java.lang.IllegalArgumentException</code>.</p>
+<p>However, there is a method <code class="language-java">setRegistrationRequired(false)</code> that allows disabling registration:</p>
+<pre><code class="language-java">public class Main {
+    public static void main(String[] args){
+        Kryo kryo = new Kryo();
+
+        // Disable registration
+        kryo.setRegistrationRequired(false);
+
+        City city = new City("Berlin", new Country("Germany", "Eurasia"));
+        try (Output output = new Output(new FileOutputStream("data.bin"))) {
+            kryo.writeObject(output, city);
+            byte[] bytes = output.toBytes();
+            System.out.println("Byte array: " + Arrays.toString(bytes));
+        } catch (IOException e) {
+            System.err.println("An error occurred while writing to the file: " + e.getMessage());
+        }
+
+        // Show unregistered classes ID
+        System.out.println("City class ID to identify an object's class when serializing it : "
+                + kryo.getRegistration(City.class).getId());
+        System.out.println("Country class ID to identify an object's class when serializing it : "
+                + kryo.getRegistration(Country.class).getId());
+    }
+}</code></pre>
+<p>Output:</p>
+<pre><code class="language-java">Byte array: [66, 101, 114, 108, 105, -18, 1, 0, 111, 114, 103, 46, 101, 120, 97, 109, 112, 108, 
+101, 46, 67, 111, 117, 110, 116, 114, -7, 69, 117, 114, 97, 115, 105, -31, 71, 101, 114, 109, 
+97, 110, -7]
+City class ID to identify an object's class when serializing it : -1
+Country class ID to identify an object's class when serializing it : -1</code></pre>
+<p>Output if we registered the <code class="language-java">Country</code> and <code class="language-java">City</code> classes:</p>
+<pre><code class="language-java">Byte array: [66, 101, 114, 108, 105, -18, 12, 69, 117, 114, 97, 115, 105, -31, 71, 101, 114, 109,
+97, 110, -7]
+City class ID to identify an object's class when serializing it : 9
+Country class ID to identify an object's class when serializing it : 10</code></pre>
+<p>When a class is registered, Kryo associates a unique integer ID with the class, which it uses to identify the class when serializing and deserializing objects. If a class is not registered with Kryo, the serializer will write the fully qualified class name of the unregistered class to the serialized data.</p>
+<p>Class registration has a lot of advantages. By assigning a unique numeric ID to each registered class, the size of the serialized byte array is reduced by half. Registering classes with Kryo allows it to cache information about the class and its fields so that it doesn't have to perform the same computation repeatedly. This leads to faster serialization and deserialization times and lower memory usage.</p>
+<h5 id="default-serializer">Default serializer</h5>
+<p>Kryo has a default serializer for most common types, such as primitives, arrays, collections, and enums. By default, Kryo has more than 50 default serializers for various JRE classes. One of Kryo's features is the ability to automatically choose the most appropriate serializer from a list of default serializers for a given object based on its type. This can improve performance and reduce the amount of code required to handle serialization.</p>
+<p>Let's modify the <code class="language-java">Country</code> class and change the <code class="language-java">continentName</code> field's type to enum:</p>
+<pre><code class="language-java">class Country {
+    String countryName;
+    Continent continentName;
+
+    public Country() {
+    }
+
+    public Country(String countryName, Continent continentName) {
+        this.countryName = countryName;
+        this.continentName = continentName;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Country country = (Country) o;
+        return this.countryName.equals(country.countryName)
+                &amp;&amp; this.continentName.equals(country.continentName);
+    }
+
+    public enum Continent {
+        AFRICA, NORTH_AMERICA, SOUTH_AMERICA, ANTARCTICA, EURASIA, AUSTRALIA
+    }
+}</code></pre>
+<p>After registering <code class="language-java">Country.Continent.class</code> and serializing the <code class="language-java">City</code> object, we receive the following byte array:</p>
+<pre><code class="language-java">Byte array: [66, 101, 114, 108, 105, -18, 12, 5, 71, 101, 114, 109, 97, 110, -7]</code></pre>
+<p>When serializing an object to a byte array, the size of the array will depend on the size of the object and the serialization method used. Enumerations can often be represented more compactly than other types of objects, which confirms the reduced size of the byte array.</p>
+<h5 id="serializer-addition">Serializer addition</h5>
+<p>Kryo allows you to specify a custom serializer for a specific type during registration. This means that when an object of that type is encountered during serialization or deserialization, the specified serializer will be used instead of the default one:</p>
+<pre><code class="language-java">Kryo kryo = new Kryo();
+kryo.register(SomeClass.class, new SomeSerializer());
+kryo.register(AnotherClass.class, new AnotherSerializer());</code></pre>
+<p>To implement a custom serializer for a custom class in Kryo, you need to create a new class that implements the <code class="language-java">Serializer</code> interface and overrides the <code class="language-java">write()</code> and <code class="language-java">read()</code> methods:</p>
+<pre><code class="language-java">public class SomeSerializer extends Serializer&lt;SomeClass&gt; {
+   @Override
+   public void write(Kryo kryo, Output output, SomeClass someClass) {
+      output.writeString(someClass.getValue());
+   }
+   @Override
+   public SomeClass read(Kryo kryo, Input input, Class&lt;? extends SomeClass&gt; type) {
+      return new SomeClass(input.readString());
+   }
+}</code></pre>
+<h5 id="conclusion"> Conclusion</h5>
+<ul><li><p>Kryo is a binary serialization library, meaning that the serialized data is not in a human-readable format. The serialized data is a binary representation of the object's state, which is designed to be compact and efficient for storage and transmission but is not easily readable by humans.</p></li><li><p>Kryo is not a thread-safe library. This means that multiple threads accessing the same Kryo instance concurrently can lead to unexpected behavior or errors.</p></li><li><p>It is generally best practice to register classes with Kryo to ensure that the serialization and deserialization process runs smoothly and efficiently.</p></li><li><p>Kryo is a high-performance Java serialization library that provides efficient and flexible serialization and deserialization of objects. It offers features such as automatic selection of serializers based on object type and the ability to register custom serializers for specific types. This allows for improved control over the serialization process, as well as optimization of space and performance for specific types.</p></li></ul>
+</div>

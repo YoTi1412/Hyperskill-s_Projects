@@ -1,0 +1,23 @@
+type: edu
+files:
+  - name: src/kryowizardry/Main.java
+    visible: false
+    learner_created: false
+  - name: src/kryowizardry/Solution.java
+    visible: true
+    learner_created: false
+  - name: src/kryowizardry/Wizard.java
+    visible: true
+    learner_created: false
+  - name: test/KryoWizardryTests.java
+    visible: false
+    learner_created: false
+  - name: build.gradle
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/32172#comment
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Wed, 10 Jul 2024 20:43:30 UTC"
+record: -1

@@ -1,0 +1,26 @@
+[1;31m
+Start test 1[0m
+> Lord Voldemort
+> true
+> wizard1.bin
+Two wizards look the same
+[1;31m
+Start test 2[0m
+> Harry Potter
+> false
+> wizard2.bin
+Two wizards look the same
+[1;31m
+Start test 3[0m
+
+> Kuramor
+> true
+> wizard3.bin
+Two wizards look the same
+[1;31m
+Start test 4[0m
+
+> Gululun
+> false
+> wizard4.bin
+Two wizards look the same

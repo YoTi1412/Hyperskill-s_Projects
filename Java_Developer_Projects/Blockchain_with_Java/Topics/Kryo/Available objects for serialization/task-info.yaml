@@ -1,0 +1,15 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: Only user-defined objects
+  - text: Primitive data types and user-defined objects
+  - text: Only primitive data types
+  - text: Arrays and collections
+files:
+  - name: src/Task.java
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/27757#comment
+status: Solved
+record: -1
+local_check: false

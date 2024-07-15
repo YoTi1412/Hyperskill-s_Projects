@@ -1,0 +1,8 @@
+content:
+  - Theory
+  - Kryo functionality
+  - Available objects for serialization
+  - Kryo registration disable
+  - Kryo thread safety
+  - Serialization
+  - Deserialization

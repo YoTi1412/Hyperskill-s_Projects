@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="KryoWizardryTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-07-10T20:43:29" hostname="YoTis-MacBook.local" time="0.422">
+  <properties/>
+  <testcase name="start" classname="KryoWizardryTests" time="0.422"/>
+  <system-out><![CDATA[?[1;31m
+Start test 1?[0m
+> Lord Voldemort
+> true
+> wizard1.bin
+Two wizards look the same
+?[1;31m
+Start test 2?[0m
+> Harry Potter
+> false
+> wizard2.bin
+Two wizards look the same
+?[1;31m
+Start test 3?[0m
+> Kuramor
+> true
+> wizard3.bin
+Two wizards look the same
+?[1;31m
+Start test 4?[0m
+> Gululun
+> false
+> wizard4.bin
+Two wizards look the same
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

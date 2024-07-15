@@ -1,0 +1,13 @@
+<div class="step-text">
+<p></p>
+<p>Please choose rows that can fill in empty spaces to complete deserialization:</p>
+<pre><code class="language-java">public class Main {
+    public static void main(String[] args) throws FileNotFoundException {
+        Kryo kryo = new Kryo();
+        kryo.register(Wizard.class);
+        Input input = ...
+        Wizard deserializedObject = ...
+        input.close();
+    }
+}</code></pre>
+</div>

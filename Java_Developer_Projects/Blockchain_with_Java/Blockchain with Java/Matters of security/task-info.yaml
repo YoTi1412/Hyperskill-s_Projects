@@ -1,0 +1,65 @@
+type: edu
+files:
+  - name: src/blockchain/Main.java
+    visible: true
+    learner_created: false
+  - name: test/BlockchainTest.java
+    visible: false
+    learner_created: false
+  - name: src/blockchain/utils/StringUtil.java
+    visible: true
+    learner_created: true
+  - name: src/blockchain/domain/block/BlockWithMessageFactory.java
+    visible: true
+    learner_created: true
+  - name: blockchain.txt
+    visible: true
+    learner_created: true
+  - name: src/blockchain/domain/block/BlockInterface.java
+    visible: true
+    learner_created: true
+  - name: src/blockchain/domain/messages/MessageReceptionService.java
+    visible: true
+    learner_created: true
+  - name: src/blockchain/domain/Miner.java
+    visible: true
+    learner_created: true
+  - name: src/blockchain/domain/block/BlockFactoryInterface.java
+    visible: true
+    learner_created: true
+  - name: src/blockchain/domain/block/Block.java
+    visible: true
+    learner_created: true
+  - name: src/blockchain/domain/block/Blockchain.java
+    visible: true
+    learner_created: true
+  - name: src/blockchain/domain/block/BlockWithMessage.java
+    visible: true
+    learner_created: true
+  - name: src/blockchain/domain/messages/Messenger.java
+    visible: true
+    learner_created: true
+  - name: src/blockchain/utils/MineUtil.java
+    visible: true
+    learner_created: true
+  - name: src/blockchain/Config.java
+    visible: true
+    learner_created: true
+  - name: src/blockchain/domain/messages/MessageSendService.java
+    visible: true
+    learner_created: true
+  - name: src/blockchain/domain/messages/Message.java
+    visible: true
+    learner_created: true
+  - name: src/blockchain/domain/security/GenerateKeys.java
+    visible: true
+    learner_created: true
+  - name: src/blockchain/domain/security/VerifyMessage.java
+    visible: true
+    learner_created: true
+feedback_link: https://hyperskill.org/learn/step/5417#comment
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Mon, 15 Jul 2024 15:55:35 UTC"
+record: 5

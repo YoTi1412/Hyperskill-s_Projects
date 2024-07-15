@@ -1,0 +1,32 @@
+type: edu
+files:
+  - name: src/blockchain/Main.java
+    visible: true
+    learner_created: false
+  - name: test/BlockchainTest.java
+    visible: false
+    learner_created: false
+  - name: blockchain.txt
+    visible: true
+    learner_created: true
+  - name: src/blockchain/utils/MineUtil.java
+    visible: true
+    learner_created: true
+  - name: src/blockchain/utils/StringUtil.java
+    visible: true
+    learner_created: true
+  - name: src/blockchain/domain/Block.java
+    visible: true
+    learner_created: true
+  - name: src/blockchain/domain/Blockchain.java
+    visible: true
+    learner_created: true
+  - name: src/blockchain/domain/Miner.java
+    visible: true
+    learner_created: true
+feedback_link: https://hyperskill.org/learn/step/5415#comment
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Mon, 15 Jul 2024 15:42:06 UTC"
+record: 3

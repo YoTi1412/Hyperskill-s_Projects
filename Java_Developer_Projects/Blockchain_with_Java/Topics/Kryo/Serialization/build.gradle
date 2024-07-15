@@ -1,0 +1,7 @@
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "com.esotericsoftware:kryo:5.4.0"
+}

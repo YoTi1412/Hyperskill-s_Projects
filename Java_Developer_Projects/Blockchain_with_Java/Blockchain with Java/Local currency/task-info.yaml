@@ -1,0 +1,99 @@
+type: edu
+files:
+  - name: src/blockchain/Main.java
+    visible: true
+    learner_created: false
+  - name: test/BlockchainTest.java
+    visible: false
+    learner_created: false
+  - name: src/blockchain/utils/StringUtil.java
+    visible: true
+    learner_created: true
+  - name: blockchain.txt
+    visible: true
+    learner_created: true
+  - name: src/blockchain/domain/messages/MessageReceptionService.java
+    visible: true
+    learner_created: true
+  - name: src/blockchain/domain/block/BlockInterface.java
+    visible: true
+    learner_created: true
+  - name: src/blockchain/domain/block/Block.java
+    visible: true
+    learner_created: true
+  - name: src/blockchain/domain/miner/Miner.java
+    visible: true
+    learner_created: true
+  - name: src/blockchain/Config.java
+    visible: true
+    learner_created: true
+  - name: src/blockchain/domain/security/GenerateKeys.java
+    visible: true
+    learner_created: true
+  - name: src/blockchain/domain/security/VerifyMessage.java
+    visible: true
+    learner_created: true
+  - name: src/blockchain/domain/messages/Message.java
+    visible: true
+    learner_created: true
+  - name: src/blockchain/domain/messages/Messenger.java
+    visible: true
+    learner_created: true
+  - name: src/blockchain/domain/messages/MessageSendService.java
+    visible: true
+    learner_created: true
+  - name: src/blockchain/domain/block/Blockchain.java
+    visible: true
+    learner_created: true
+  - name: src/blockchain/utils/MineUtil.java
+    visible: true
+    learner_created: true
+  - name: src/blockchain/domain/block/BlockFactoryInterface.java
+    visible: true
+    learner_created: true
+  - name: src/blockchain/utils/CryptographyUtil.java
+    visible: true
+    learner_created: true
+  - name: src/blockchain/domain/CryptoOwner.java
+    visible: true
+    learner_created: true
+  - name: src/blockchain/domain/wallet/CryptoWallet.java
+    visible: true
+    learner_created: true
+  - name: src/blockchain/domain/wallet/CryptoWalletInterface.java
+    visible: true
+    learner_created: true
+  - name: src/blockchain/domain/wallet/Signer.java
+    visible: true
+    learner_created: true
+  - name: src/blockchain/domain/transactions/Transaction.java
+    visible: true
+    learner_created: true
+  - name: src/blockchain/domain/transactions/TransactionFactory.java
+    visible: true
+    learner_created: true
+  - name: src/blockchain/domain/transactions/TransactionReceptionService.java
+    visible: true
+    learner_created: true
+  - name: src/blockchain/domain/transactions/Verifiable.java
+    visible: true
+    learner_created: true
+  - name: src/blockchain/domain/miner/MinerInterface.java
+    visible: true
+    learner_created: true
+  - name: src/blockchain/domain/block/BlockWithTransactionFactory.java
+    visible: true
+    learner_created: true
+  - name: src/blockchain/domain/block/BlockWithTransactions.java
+    visible: true
+    learner_created: true
+  - name: src/blockchain/utils/TransactionUtil.java
+    visible: true
+    learner_created: true
+feedback_link: https://hyperskill.org/learn/step/5418#comment
+status: Solved
+feedback:
+  message: Well done! You've finished the project. Select a new project on <a href="https://hyperskill.org/projects">Hyperskill</a>
+    to continue learning.
+  time: "Mon, 15 Jul 2024 16:09:59 UTC"
+record: -1
