@@ -1,0 +1,156 @@
+type: edu
+files:
+  - name: test/ContactsTest.java
+    visible: false
+    learner_created: false
+  - name: src/contacts/app/Contacts.java
+    visible: true
+    learner_created: true
+  - name: src/contacts/commands/Command.java
+    visible: true
+    learner_created: true
+  - name: src/contacts/commands/addOrganizationCommand.java
+    visible: true
+    learner_created: true
+  - name: src/contacts/commands/addPersonCommand.java
+    visible: true
+    learner_created: true
+  - name: src/contacts/commands/deleteCommand.java
+    visible: true
+    learner_created: true
+  - name: src/contacts/commands/searchCommand.java
+    visible: true
+    learner_created: true
+  - name: src/contacts/commands/showCommand.java
+    visible: true
+    learner_created: true
+  - name: src/contacts/commands/updateCommand.java
+    visible: true
+    learner_created: true
+  - name: src/contacts/contactUtils/RegexValidator.java
+    visible: true
+    learner_created: true
+  - name: src/contacts/contactUtils/Serialization.java
+    visible: true
+    learner_created: true
+  - name: src/contacts/contacts/Contact.java
+    visible: true
+    learner_created: true
+  - name: src/contacts/contacts/ContactCreation.java
+    visible: true
+    learner_created: true
+  - name: src/contacts/contacts/ContactFactory.java
+    visible: true
+    learner_created: true
+  - name: src/contacts/contacts/ContactType.java
+    visible: true
+    learner_created: true
+  - name: src/contacts/contacts/OrganizationContact.java
+    visible: true
+    learner_created: true
+  - name: src/contacts/contacts/PersonContact.java
+    visible: true
+    learner_created: true
+  - name: src/contacts/contactsIO/ConsoleTerminal.java
+    visible: true
+    learner_created: true
+  - name: src/contacts/contactsIO/Terminal.java
+    visible: true
+    learner_created: true
+  - name: src/contacts/invokers/Controller.java
+    visible: true
+    learner_created: true
+  - name: src/contacts/receivers/ContactBook.java
+    visible: true
+    learner_created: true
+  - name: src/contacts/Args.java
+    visible: true
+    learner_created: true
+  - name: src/contacts/Main.java
+    visible: true
+    learner_created: true
+  - name: src/contacts/contact/PersonContact.java
+    visible: true
+    learner_created: true
+  - name: src/contacts/contact/OrganisationContact.java
+    visible: true
+    learner_created: true
+  - name: src/contacts/contact/AbstractContact.java
+    visible: true
+    learner_created: true
+  - name: src/contacts/contact/Contact.java
+    visible: true
+    learner_created: true
+  - name: src/contacts/contact/properties/BirthDate.java
+    visible: true
+    learner_created: true
+  - name: src/contacts/contact/properties/Surname.java
+    visible: true
+    learner_created: true
+  - name: src/contacts/contact/properties/Name.java
+    visible: true
+    learner_created: true
+  - name: src/contacts/contact/properties/Gender.java
+    visible: true
+    learner_created: true
+  - name: src/contacts/contact/properties/OrganisationName.java
+    visible: true
+    learner_created: true
+  - name: src/contacts/contact/properties/Address.java
+    visible: true
+    learner_created: true
+  - name: src/contacts/contact/properties/PhoneNumber.java
+    visible: true
+    learner_created: true
+  - name: src/contacts/contact/records/Record.java
+    visible: true
+    learner_created: true
+  - name: src/contacts/contact/records/AbstractRecord.java
+    visible: true
+    learner_created: true
+  - name: src/contacts/contact/records/OrganisationRecord.java
+    visible: true
+    learner_created: true
+  - name: src/contacts/contact/records/PersonRecord.java
+    visible: true
+    learner_created: true
+  - name: src/contacts/contact/exceptions/UploadPhoneBookException.java
+    visible: true
+    learner_created: true
+  - name: src/contacts/contact/exceptions/LoadPhoneBookException.java
+    visible: true
+    learner_created: true
+  - name: src/contacts/contact/exceptions/CreateFileException.java
+    visible: true
+    learner_created: true
+  - name: src/contacts/contact/factory/PhoneBookFactory.java
+    visible: true
+    learner_created: true
+  - name: src/contacts/contact/factory/FilePhoneBookFactory.java
+    visible: true
+    learner_created: true
+  - name: src/contacts/contact/factory/SimplePhoneBookFactory.java
+    visible: true
+    learner_created: true
+  - name: src/contacts/contact/searchphonebook/SearchPhoneBook.java
+    visible: true
+    learner_created: true
+  - name: src/contacts/contact/searchphonebook/SimpleSearchPhoneBook.java
+    visible: true
+    learner_created: true
+  - name: src/contacts/contact/phonebook/PhoneBook.java
+    visible: true
+    learner_created: true
+  - name: src/contacts/contact/phonebook/FilePhoneBook.java
+    visible: true
+    learner_created: true
+  - name: src/contacts/contact/phonebook/SimplePhoneBook.java
+    visible: true
+    learner_created: true
+feedback_link: https://hyperskill.org/projects/43/stages/231/implement#comment
+status: Solved
+feedback:
+  message: Well done! You've finished the project. Select a new project on <a href="https://hyperskill.org/projects">Hyperskill</a>
+    to continue learning.
+  time: "Tue, 16 Jul 2024 00:27:12 UTC"
+record: -1
